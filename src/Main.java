@@ -2,6 +2,7 @@ import decorator_pattern.Drink;
 import decorator_pattern.IcedCoffee;
 import decorator_pattern.decorators.CaramelAddOnDecorator;
 import decorator_pattern.decorators.ChocolateAddOnDecorator;
+import singleton_pattern.Singleton;
 import strategy_pattern.Device;
 import strategy_pattern.DuckCallBehavior;
 import strategy_pattern.DuckDevice;
@@ -27,6 +28,10 @@ public class Main {
 //        );
 //        System.out.println(drink.cost());
 
+////        Singleton example
+        Singleton one = Singleton.getInstance();
+        Singleton two = Singleton.getInstance();
+        System.out.println(one == two);
 
     }
 }
