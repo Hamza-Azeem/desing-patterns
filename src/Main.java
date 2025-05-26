@@ -1,3 +1,6 @@
+import adpator_pattern.Adaptee;
+import adpator_pattern.Adapter;
+import adpator_pattern.AdapterInterface;
 import decorator_pattern.Drink;
 import decorator_pattern.IcedCoffee;
 import decorator_pattern.decorators.CaramelAddOnDecorator;
@@ -29,9 +32,15 @@ public class Main {
 //        System.out.println(drink.cost());
 
 ////        Singleton example
-        Singleton one = Singleton.getInstance();
-        Singleton two = Singleton.getInstance();
-        System.out.println(one == two);
+//        Singleton one = Singleton.getInstance();
+//        Singleton two = Singleton.getInstance();
+//        System.out.println(one == two);
+
+////        Adapter example
+//        AdapterInterface adapter = new Adapter(
+//                new Adaptee()
+//        );
+//        adapter.request();
 
     }
 }
